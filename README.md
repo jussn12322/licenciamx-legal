@@ -10,18 +10,14 @@ Sitio independiente de información legal y soporte de LicenciaMX.
 - `/eliminar-cuenta/`
 - `/delete-account/` (alias para plataformas)
 
-## Dominio
+## Publicación
 
-Dominio principal: `licenciamx.com.mx`
+- Proveedor: Netlify.
+- Rama de producción: `main`.
+- Comando de compilación: ninguno.
+- Directorio de publicación: `.`.
+- Dominio principal: `licenciamx.com.mx`.
 
-GitHub Pages requiere estos registros DNS para el dominio raíz:
-
-| Tipo | Nombre | Valor |
-|---|---|---|
-| A | `@` | `185.199.108.153` |
-| A | `@` | `185.199.109.153` |
-| A | `@` | `185.199.110.153` |
-| A | `@` | `185.199.111.153` |
-| CNAME | `www` | `jussn12322.github.io` |
-
-No se deben crear registros DNS comodín. Las publicaciones se realizan desde la rama `main` mediante GitHub Pages.
+El dominio se delega a los cuatro servidores autoritativos asignados por
+Netlify DNS. Las publicaciones se realizan automáticamente al actualizar la
+rama `main`.
